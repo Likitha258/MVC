@@ -1,0 +1,15 @@
+﻿@model MCV_hol3.Models.User
+@using (Html.BeginForm("SaveUser", "Home"))
+
+
+{
+    <p>
+        User Name: <input type="text" name=@Html.TextBoxFor(User => User.UserName)
+    </p>
+
+    <p>
+        Password: <input type="password" name=@Html.PasswordFor(User => User.Password)
+    </p>
+
+    <input type="submit" value="Add User" />
+}
